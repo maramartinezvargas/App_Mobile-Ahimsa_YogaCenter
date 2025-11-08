@@ -1,0 +1,114 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background"
+    android:padding="16dp">
+
+    <!-- Contenedor vertical centralizado para los campos del registro -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <!-- Logo de la aplicación -->
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ahimsa_logo"
+            android:layout_marginBottom="4dp" />
+
+        <!-- Título de la pantalla -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Registro"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Campo de nombre completo -->
+        <EditText
+            android:id="@+id/inputName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre completo"
+            android:background="#30FFFFFF"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#E0E0E0"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Campo de correo electrónico -->
+        <EditText
+            android:id="@+id/inputEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Correo electrónico"
+            android:inputType="textEmailAddress"
+            android:background="#30FFFFFF"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#E0E0E0"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Campo de teléfono -->
+        <EditText
+            android:id="@+id/inputPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Teléfono"
+            android:inputType="phone"
+            android:background="#30FFFFFF"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#E0E0E0"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Selector de nivel del usuario -->
+        <Spinner
+            android:id="@+id/spinnerLevel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#30FFFFFF"
+            android:layout_marginBottom="12dp"
+            android:padding="12dp" />
+
+        <!-- Campo de contraseña -->
+        <EditText
+            android:id="@+id/inputPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Contraseña"
+            android:inputType="textPassword"
+            android:background="#30FFFFFF"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#ffffff"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Aceptación de términos y condiciones -->
+        <CheckBox
+            android:id="@+id/checkboxTerms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Aceptar términos y condiciones"
+            android:textColor="#FFFFFF"
+            android:buttonTint="#ffffff"/>
+
+        <!-- Botón de registro -->
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="174dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#a98ea8"
+            android:padding="12dp"
+            android:text="Registrarse"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+    </LinearLayout>
+</ScrollView>

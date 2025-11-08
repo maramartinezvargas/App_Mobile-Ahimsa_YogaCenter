@@ -1,0 +1,130 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/perfil_background"
+    android:padding="16dp"
+    tools:context=".ui.PerfilActivity">
+
+    <!-- Contenedor vertical centralizado para todos los elementos de la pantalla -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingTop="4dp"
+        android:paddingBottom="40dp">
+
+        <!-- Foto de perfil del usuario -->
+        <ImageView
+            android:id="@+id/ivFotoPerfil"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="45dp"
+            android:layout_marginBottom="16dp"
+            android:src="@drawable/foto_perfil1"
+            android:background="@drawable/circle_background"
+            android:scaleType="centerCrop"
+            android:clipToOutline="true"
+            android:contentDescription="Foto de perfil"
+            android:outlineProvider="background" />
+
+        <!-- Nombre del usuario -->
+        <TextView
+            android:id="@+id/tvNombreUsuario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre del Usuario"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="4dp" />
+
+        <!-- Correo del usuario -->
+        <TextView
+            android:id="@+id/tvCorreoUsuario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="usuario@ejemplo.com"
+            android:textSize="14sp"
+            android:textColor="#E0E0E0"
+            android:layout_marginBottom="32dp" />
+
+        <!-- Menú de opciones del perfil -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:divider="?android:attr/dividerVertical"
+            android:showDividers="middle">
+
+            <Button
+                android:id="@+id/btnMisSesiones"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#30FFFFFF"
+                android:text="Mis sesiones reservadas"
+                android:textColor="#FFFFFF"
+                android:padding="12dp"
+                android:layout_marginBottom="4dp"/>
+
+            <Button
+                android:id="@+id/btnCambiarContrasena"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#30FFFFFF"
+                android:text="Cambiar contraseña"
+                android:textColor="#FFFFFF"
+                android:padding="12dp"
+                android:layout_marginBottom="4dp"/>
+
+            <Button
+                android:id="@+id/btnCorreo"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#30FFFFFF"
+                android:text="Correo electrónico"
+                android:textColor="#FFFFFF"
+                android:padding="12dp"
+                android:layout_marginBottom="4dp"/>
+
+            <Button
+                android:id="@+id/btnTelefono"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#30FFFFFF"
+                android:text="Número de teléfono"
+                android:textColor="#FFFFFF"
+                android:padding="12dp"
+                android:layout_marginBottom="4dp"/>
+
+            <Button
+                android:id="@+id/btnTarjeta"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#30FFFFFF"
+                android:text="Tarjeta bancaria"
+                android:textColor="#FFFFFF"
+                android:padding="12dp"
+                android:layout_marginBottom="4dp"/>
+        </LinearLayout>
+
+        <!-- Botón de cerrar sesión -->
+        <Button
+            android:id="@+id/btnCerrarSesion"
+            android:layout_width="203dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:backgroundTint="#a98ea8"
+            android:padding="12dp"
+            android:text="Cerrar sesión"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+    </LinearLayout>
+</ScrollView>

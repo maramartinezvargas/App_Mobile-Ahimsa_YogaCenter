@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    activity_confirmacion.xml
+
+    Pantalla de confirmación de la reserva.
+    Incluye:
+    - Logo de la app.
+    - Mensajes de confirmación y detalle de la reserva (fecha y hora).
+    - Recordatorio para traer la esterilla.
+    - Botón "OK" para volver al perfil.
+    - Botón/área "Compartir con contactos" para enviar la reserva.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/confirmacion_background">
+
+    <!-- Logo de la app -->
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/ahimsa_logo" />
+
+    <!-- Mensaje principal -->
+    <TextView
+        android:id="@+id/textTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reserva confirmada"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="4dp" />
+
+    <!-- Detalle general -->
+    <TextView
+        android:id="@+id/textDetalle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Detalles de tu reserva:"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="4dp" />
+
+    <!-- Fecha de la reserva -->
+    <TextView
+        android:id="@+id/textFecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fecha: "
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:layout_marginBottom="4dp" />
+
+    <!-- Hora de la reserva -->
+    <TextView
+        android:id="@+id/textHora"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hora: "
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Recordatorio -->
+    <TextView
+        android:id="@+id/textDetalle2"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:text="Recuerda traer tu esterilla, ¡te esperamos!"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Despedida -->
+    <TextView
+        android:id="@+id/textNamaste"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Namasté"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Botón OK para volver al perfil -->
+    <Button
+        android:id="@+id/btnOk"
+        android:layout_width="227dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#a98ea8"
+        android:padding="12dp"
+        android:text="OK"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+
+    <!-- Área para compartir reserva -->
+    <LinearLayout
+        android:id="@+id/layoutCompartir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"
+        android:clickable="true"
+        android:focusable="true">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/share_ico"
+            android:contentDescription="Compartir" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Compartir con contactos"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginStart="8dp" />
+    </LinearLayout>
+
+</LinearLayout>
